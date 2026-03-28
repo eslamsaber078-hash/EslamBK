@@ -39,7 +39,7 @@
                 <p>i design a windows forms apps </p>
 
 
-                <a href="eslam_saber_CV.pdf - Shortcut" download class="btn">Download CV</a>
+                <a href="eslam_saber_CV.pdf - Shortcut.lnk" download class="btn" id="downloadBtn">Download CV</a>
 
                 <div class="social-icons">
                     <a href="https://www.facebook.com/islam.saber.106"><i class="fa-brands fa-facebook"></i></a>
@@ -314,7 +314,14 @@
         };
 
         window.addEventListener('scroll', handleScrollAnimation);
-        window.addEventListener('load', handleScrollAnimation); // عشان كمان يشتغل لو العنصر ظاهر من البداية
+        window.addEventListener('load', handleScrollAnimation);
+        // عشان كمان يشتغل لو العنصر ظاهر من البداية
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            const link = document.createElement('a');
+            link.href = 'files/Eslam_Saber_CV.pdf'; // مسار الملف
+            link.download = 'Eslam_Saber_CV.pdf';   // اسم الملف عند التحميل
+            link.click();
+        });
     </script>
 
 </body>
