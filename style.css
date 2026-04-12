@@ -52,13 +52,13 @@ img {
     height :50px;
     
 }
-button{
-    background-color:orangered;
-    padding:5px;
+button {
+    background-color: #23a3fe;
+    padding: 5px;
     border-radius: 25px;
-    cursor:pointer;
-    margin:20px;
-    transition:0.3s;
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.3s;
 }
 button:hover{
     font-size:15px;
