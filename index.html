@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -6,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Portfolio</title>
+    <link  rel="icon"href="logo2.png"/>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -105,23 +107,29 @@
     </section>
 
     <section class="cards" id="About">
-        <h2 class="title scroll-element"> About</h2>
+        <h2 class="title scroll-element"> About me</h2>
         <div class="About-me">
-            <p class="how"> Who is Eslam ?</p>
+            <div class="About-info">
+                <h2><span> hwo is eslam ? </span></h2>
+                <h4>iam a devoloper</h4>
+                <p>
+                    Ambitious and driven professional with over 5 years of experience in customer service and banking.
+                    Skilled in Windows Desktop Application development using C# (WinForms), as well as Front-End Web Development.
+                    Strong communication and problem-solving abilities, with a passion for technology and continuous learning.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Banking</li>
+                    <li><i class="fa-solid fa-check"></i>Frontend Developer</li>
+                    <li><i class="fa-solid fa-check"></i>WinForms</li>
+                    <li><i class="fa-solid fa-check"></i>UI/UX Designer</li>
+                </ul>
 
-
+            </div>
+            <div class="image-about"><img src="logo2.png" /></div>
         </div>
-        <p class="paragrafh typing" id="typing">
-            I’m Eslam, a 25-year-old ambitious and driven professional with a strong background in customer service and a growing passion for technology.
+        <!--<p class="paragrafh typing" id="typing">
 
-            I bring over 5 years of hands-on experience in dealing with customers, where I developed excellent communication skills, problem-solving abilities, and a professional mindset. Currently, I work as a Customer Service Representative at the National Bank of Egypt, where I handle customer needs efficiently and build positive experiences.
-
-            In addition to my customer service background, I have experience across multiple fields including sales, restaurants, accounting, and data handling. This diverse experience helped me become adaptable, reliable, and able to work under pressure.
-
-            On the technical side, I specialize in C# programming, web development, and UI/UX design. I have strong computer skills and a continuous desire to learn and improve my technical knowledge.
-
-            I am a fast learner, highly motivated, and always looking for opportunities to grow, contribute, and build a successful career in the tech field.
-        </p>
+        </p>-->
 
 
 
@@ -350,6 +358,20 @@
 
 
     <script>
+
+        let header = document.querySelector("header")
+        window.onscroll = function () {
+            if (window.scrollY >= 1) {
+                header.classList.add("active")
+            }
+            else {
+                header.classList.remove("active")
+            }
+        }
+
+
+
+
         var btnmode = document.querySelector('.btn-mode')
         btnmode.onclick = function () {
             document.body.classList.toggle("white-theme")
@@ -422,7 +444,7 @@
             });
         });
 
-        
+
         function openVideo(videoUrl) {
             let width = 900;
             let height = 600;
@@ -431,7 +453,7 @@
 
             window.open(
                 videoUrl,
-                
+
                 "videoPopup",
                 `width=${width},height=${height},top=${top},left=${left}`
             );
@@ -457,6 +479,10 @@ Highly proficient in using computers and fast at learning new technologies.`;
 
         // ننتظر تحميل الصفحة قبل التنفيذ
         window.onload = typeWriter;
+
+
+
+
 
     </script>
 
