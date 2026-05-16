@@ -576,13 +576,18 @@ button {
     cursor: pointer;
 }
 
-
+.hero header nav .btn-mode {
+    font-size: 23px;
+}
 
 
 
 
 @media (max-width: 768px) {
 
+    .hero {
+        min-height: 100vh;
+    }
     /* Navbar */
     .hero header nav {
         flex-direction: column;
@@ -626,7 +631,10 @@ button {
         .hero .container .div-image {
             position: static;
             width: 70%;
-            margin: 20px auto;
+            margin:50px auto -10px auto;
+
+
+                      
         }
 
     /* Social Icons */
@@ -641,16 +649,19 @@ button {
     .content {
         flex-direction: column;
         align-items: center;
+        
+        
     }
 
     .card {
-        width: 90%;
+        width: 85%;
         margin: 15px auto;
     }
 
     /* Projects */
     .project-card {
-        width: 90%;
+        width: 80%;
+        height:70%;
         margin: 15px auto;
     }
 
@@ -669,12 +680,14 @@ button {
         flex-direction: column;
         text-align: center;
         padding: 25px;
-        gap:20px;
+        gap:25px;
+        
     }
 
     .About-info ul li {
         width: 100%;
         justify-content:  left;
+        
         
     }
 
